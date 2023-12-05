@@ -1,0 +1,35 @@
+Linked List
+    1. What is a singly linked list? Draw a picture of it.
+        A singly linked list is just a list that has a head, nodes with values that point 
+        repeatedly till it lands on a nullptr
+    2. What would a doubly linked list and circular linked list look like?
+        A doubly linked list is a linked list where each node contains a pointer to the 
+        previous and next node on the list
+
+Compare and Contrast: Singly Linked List vs. Array
+    3. How are memory assigned for both data structures? Contiguous vs. non-contiguous? 
+        Array is contiguous while list is non-contiguous
+    4. In order to store the same amount of elements (e.g., 100 integers), which data 
+    structure would consume more memory and why?
+        Linked list would require extra memory because you store the value and the pointer
+        while the array stores the value and just that
+    5. Advantage(s) of linked list over array:
+        Can dynamically grow and shrink during runtime, efficient insertion and deletion 
+        of elements at any point on the list, more memory efficient since you do not need 
+        to store in contiguous memory (sometimes not used)
+    6. Drawbacks of linked list:
+        You cannot just access an element without traversing the list, which can take up time,
+        and you cannot traverse backwards, must restart when needing to grab something further
+        and then something more back. Also need extra memory
+
+Complexity Analysis
+    7. Suppose an array, arr, and a singly linked list, lst, both have x elements, 
+    - If we want to access the element at index y (y<x), what is the time complexity for both 
+    using big O, and why?
+        List is O(n) while arr is O(1)
+    - If we want to insert an element in the middle, what is the time complexity for both using 
+    big O, and why?
+        List is O(n) while arr is O(n)
+    - If we want to delete an element in the middle, what is the time complexity for both using 
+    big O, and why?
+        List is O(1) while arr is O(n)
